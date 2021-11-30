@@ -6,7 +6,7 @@ public class Camion extends Vehiculo {
 	private static int total;
 	
 	public Camion(String placa, String nombre, long precio, float peso, Fabricante f, int ejes) {
-		super(placa,2, 80, nombre, precio, peso, "4x2", f);
+		super(placa,2, 80, nombre, precio, peso, "4X2", f);
 		setEjes(ejes);
 		total++;
 	}
