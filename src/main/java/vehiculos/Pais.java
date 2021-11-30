@@ -8,7 +8,7 @@ public class Pais {
 		setNombre(nombre);
 	}
 	
-	String getNombre() {return this.nombre;}
+	public String getNombre() {return this.nombre;}
 	void setNombre(String nombre) {this.nombre = nombre;}
 
 }

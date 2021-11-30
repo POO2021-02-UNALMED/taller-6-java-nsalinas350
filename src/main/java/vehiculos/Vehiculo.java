@@ -29,31 +29,31 @@ public class Vehiculo {
 		cantidadVehiculos++;
 	}
 	
-	int getCantidadVehiculos() {return Vehiculo.cantidadVehiculos;}
+	public static int getCantidadVehiculos() {return Vehiculo.cantidadVehiculos;}
+	public static void setCantidadVehiculos(int n) {Vehiculo.cantidadVehiculos=n;}
 	
 	String getPlaca() {return this.placa;}
 	void setPlaca(String placa) {this.placa = placa;}
 	
-	
-	int getPuertas() {return this.puertas;}
+	public int getPuertas() {return this.puertas;}
 	void setPuertas(int puertas) {this.puertas = puertas;}
 	
-	int getVelocidadMaxima() {return this.velocidadMaxima;}
+	public int getVelocidadMaxima() {return this.velocidadMaxima;}
 	void setVelocidadMaxima(int v) {this.velocidadMaxima = v;}
 	
-	String getNombre() {return this.nombre;}
+	public String getNombre() {return this.nombre;}
 	void setNombre(String nombre) {this.nombre = nombre;}
 	
-	long getPrecio() {return this.precio;}
+	public long getPrecio() {return this.precio;}
 	void setPrecio(long precio) {this.precio = precio;}
 	
-	float getPeso() {return this.peso;}
+	public float getPeso() {return this.peso;}
 	void setPeso(float peso) {this.peso = peso;}
 	
-	String getTraccion() {return this.traccion;}
+	public String getTraccion() {return this.traccion;}
 	void setTraccion(String traccion) {this.traccion = traccion;}
 	
-	Fabricante getFabricante() {return this.fabricante;}
+	public Fabricante getFabricante() {return this.fabricante;}
 	void setFabricante(Fabricante f) {this.fabricante = f;}
 	
 	

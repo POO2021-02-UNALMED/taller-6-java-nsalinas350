@@ -10,10 +10,10 @@ public class Fabricante {
 		setPais(pais);
 	}
 	
-	String getNombre() {return this.nombre;}
+	public String getNombre() {return this.nombre;}
 	void setNombre(String nombre) {this.nombre = nombre;}
 	
-	Pais getPais() {return this.pais;}
+	public Pais getPais() {return this.pais;}
 	void setPais(Pais pais) {this.pais = pais;}
 
 }
