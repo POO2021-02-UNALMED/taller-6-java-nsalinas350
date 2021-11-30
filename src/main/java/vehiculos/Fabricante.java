@@ -26,7 +26,7 @@ public class Fabricante {
 	
 	public static ArrayList<Fabricante> getFabricantes() {return Fabricante.fabricantes;}
 	
-	public static Object fabricaMayorVentas(){
+	public static Fabricante fabricaMayorVentas(){
 		ArrayList<Integer> listaVendidos = new ArrayList<Integer>();
 		Fabricante maxVendedor = null;
 		
