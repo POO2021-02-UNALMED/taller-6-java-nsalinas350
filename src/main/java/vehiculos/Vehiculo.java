@@ -32,7 +32,7 @@ public class Vehiculo {
 	public static int getCantidadVehiculos() {return Vehiculo.cantidadVehiculos;}
 	public static void setCantidadVehiculos(int n) {Vehiculo.cantidadVehiculos=n;}
 	
-	String getPlaca() {return this.placa;}
+	public String getPlaca() {return this.placa;}
 	void setPlaca(String placa) {this.placa = placa;}
 	
 	public int getPuertas() {return this.puertas;}

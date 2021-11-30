@@ -11,10 +11,6 @@ public class Camioneta extends Vehiculo {
 		total++;
 	}
 	
-	String getPlaca() {return this.placa;}
-	void setPlaca(String placa) {this.placa = placa;}
-	
-	
 	boolean isVolco() {return this.volco;}
 	void setVolco(boolean volco) {this.volco = volco;}
 	

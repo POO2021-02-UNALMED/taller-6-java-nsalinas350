@@ -15,5 +15,10 @@ public class Fabricante {
 	
 	public Pais getPais() {return this.pais;}
 	void setPais(Pais pais) {this.pais = pais;}
+	
+	public static Fabricante paisMasVendedor(){
+		return new Fabricante("Empresa vendedora",new Pais("Pais Generico"));
+	}
+
 
 }
