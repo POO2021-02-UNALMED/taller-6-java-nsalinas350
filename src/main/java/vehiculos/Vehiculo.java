@@ -13,11 +13,11 @@ public class Vehiculo {
 	
 	static private int cantidadVehiculos;
 	
-	Vehiculo(){
+	public Vehiculo(){
 		cantidadVehiculos++;
 	}
 	
-	Vehiculo(String placa, int puertas, int vel, String nombre, long precio, float peso, String traccion, Fabricante f) {
+	public Vehiculo(String placa, int puertas, int vel, String nombre, long precio, float peso, String traccion, Fabricante f) {
 		setPlaca(placa);
 		setPuertas(puertas);
 		setVelocidadMaxima(vel);
@@ -57,8 +57,10 @@ public class Vehiculo {
 	void setFabricante(Fabricante f) {this.fabricante = f;}
 	
 	
-	/*String VehiculosPorTipo(){
-		
-	}*/
+	String VehiculosPorTipo(){
+		return "Automoviles: "+Automovil.getTotal()+
+				"\nCamionetas: "+Camioneta.getTotal()+
+				"\nCamiones: "+Camion.getTotal();
+	}
 	
 }

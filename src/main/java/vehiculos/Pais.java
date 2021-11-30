@@ -4,7 +4,7 @@ public class Pais {
 	
 	private String nombre;
 	
-	Pais(String nombre){
+	public Pais(String nombre){
 		setNombre(nombre);
 	}
 	
