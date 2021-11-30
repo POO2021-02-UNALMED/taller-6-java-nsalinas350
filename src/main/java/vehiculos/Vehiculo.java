@@ -27,7 +27,8 @@ public class Vehiculo {
 		setTraccion(traccion);
 		setFabricante(f);
 		cantidadVehiculos++;
-		f.getListado().add(this);
+		f.vendidos++;
+		f.getPais().vendidos++;
 	}
 	
 	public static int getCantidadVehiculos() {return Vehiculo.cantidadVehiculos;}
