@@ -1,6 +1,6 @@
 package vehiculos;
 
-class Vehiculo {
+public class Vehiculo {
 	
 	String placa;
 	int puertas;
@@ -55,5 +55,10 @@ class Vehiculo {
 	
 	Fabricante getFabricante() {return this.fabricante;}
 	void setFabricante(Fabricante f) {this.fabricante = f;}
+	
+	
+	/*String VehiculosPorTipo(){
+		
+	}*/
 	
 }
