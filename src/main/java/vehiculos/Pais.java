@@ -1,6 +1,7 @@
 package vehiculos;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Pais {
 	
@@ -19,9 +20,24 @@ public class Pais {
 	public int getVendidos() {return this.vendidos;}
 	
 	public static ArrayList<Pais> getPaises() {return Pais.paises;}
+
 	
 	public static Pais paisMasVendedor(){
-		return new Pais("Pais Vendedor");
+		ArrayList<Integer> listaVendidos = new ArrayList<Integer>();
+		Pais maxVendedor = null;
+		
+		for (Pais p: paises) {
+			listaVendidos.add(p.getVendidos());
+		}
+		
+		int maximoVendidos = Collections.max(listaVendidos);
+		for (Pais p: paises) {
+			if (p.getVendidos() == maximoVendidos) {
+				maxVendedor = p;
+			}
+		}
+		
+		return maxVendedor;
 	}
-
+	
 }
